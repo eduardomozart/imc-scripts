@@ -124,7 +124,7 @@ if ($OsType -eq "Windows") {
 
 	$openAlarms = Invoke-SqlQuery -Query $sqlQuery
 }
-$openAlarms | Format-Table
+#$openAlarms | Format-Table
 
 if ($openAlarms) {
 	$openAlarms | ForEach-Object {
